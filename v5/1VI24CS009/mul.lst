@@ -1,0 +1,42 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             MULTIPLY,CODE,READONLY
+    2 00000000                 ENTRY
+    3 00000000         START
+    4 00000000 E3A01036        MOV              r1,#0054
+    5 00000004 E3A02022        MOV              r2,#0034
+    6 00000008 E0030291        MUL              r3,r1,r2
+    7 0000000C E1A00000        NOP
+    8 00000010 E1A00000        NOP
+    9 00000014                 END
+Command Line: --debug --xref --apcs=interwork --depend=.\mul.d -o.\mul.o -IC:\K
+eil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Philips --predef
+ine="__EVAL SETA 1" --list=.\mul.lst mul.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+MULTIPLY 00000000
+
+Symbol: MULTIPLY
+   Definitions
+      At line 1 in file mul.asm
+   Uses
+      None
+Comment: MULTIPLY unused
+START 00000000
+
+Symbol: START
+   Definitions
+      At line 3 in file mul.asm
+   Uses
+      None
+Comment: START unused
+2 symbols
+333 symbols in table
